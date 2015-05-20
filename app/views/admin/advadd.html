@@ -1,0 +1,27 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<a ng-click="submit(epData)" class="btn btn-success">保存</a>
+		<a ui-sref="list({table:'User'})" class="btn btn-default">返回</a>
+	</div>	
+	<div class="panel-body">
+		<div class="form-horizontal">
+			<singleselectinput displayname="选择广告栏" options="[{name:'请选择广告栏',value:'0'}]" inputcontent="0"></singleselectinput>
+			<div class="form-group">
+				<div class="col-md-6 col-md-offset-2">
+					<img src="" alt="" style="width:200px;height:200px;" class="img-thumbnail">
+				</div>	
+			</div>
+			<div class="form-group">
+				<div class="col-md-4 col-md-offset-2">
+					<input type="text" class="form-control">
+				</div>
+				<div class="col-md-2">
+					<button class="btn btn-defualt">增添图片</button>			
+				</div>
+				<div class="col-md-1">
+					<button class="btn btn-success">上传</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

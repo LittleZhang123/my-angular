@@ -1,0 +1,43 @@
+<style>
+	.showcase-form textarea .ng-dirty.ng-invalid,
+	.showcase-form select .ng-dirty.ng-invalid,
+	.showcase-form input.ng-dirty.ng-invalid {
+	    border-color: #e9322d;
+	    -webkit-box-shadow: 0 0 6px #f8b9b7;
+	    -moz-box-shadow: 0 0 6px #f8b9b7;
+	    box-shadow: 0 0 6px #f8b9b7;
+	}
+</style>
+<form class="form-horizontal showcase-form" name="form" novalidate="">
+	<div class="form-group">
+		<label for="inputEmail3" class="col-md-2 control-label">账号</label>
+		<div class="col-md-10">
+			<input type="text" id="inputEmail3" name="email" minlength="6" maxlength="25" required ng-model="Login.UserName" class="form-control" ui-validate="{blacklist : 'notBlackListed($value)' }"  placeholder="输入账号">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputPassword3" class="col-md-2 control-label">密码</label>
+		<div class="col-md-10">
+			<input type="password" name="password" ng-model="Login.Password" class="form-control" minlength="6" placeholder="输入密码" maxlength="15" ui-validate="{isSame:'$value!=Login.UserName'}" ui-validate-watch="'Login.UserName'">
+		</div>
+	</div>
+	<!-- <div class="form-group" ng-show="form.$invalid && (form.$dirty)">
+    <label class="col-sm-2 control-label"></label>
+
+    <div class="col-sm-10">
+      <div class="alert alert-danger" style="margin-bottom: 0px">
+        <ul>
+          <li ng-show="(form.email.$dirty) && form.email.$error.required">用户名不能为空！</li>
+          <li ng-show="(form.password.$dirty) && form.email.$error.required">密码不能为空！</li>
+          <li ng-show="(form.password.$dirty) && form.password.$error.isSame">密码不能与账号相同！</li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+	<div class="form-group">
+		<div class="col-md-offset-2 col-md-10">
+			<button class="btn btn-success" ng-click="IsPass()" ng-disabled="form.$invalid">登陆</button>
+			<a class="btn btn-default" ui-sref="register">注册</a>
+		</div>
+	</div>
+</form>

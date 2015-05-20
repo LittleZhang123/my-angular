@@ -1,0 +1,23 @@
+<div class="navbar navbar-default">
+  <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+            <div class="navbar-form navbar-left">
+              <a ui-sref="roleDetail({id:''})" class="btn btn-default">添加新角色</a>
+            </div>
+              <div class="navbar-form navbar-right">
+                <div class="form-group">
+                  <input type="text" class="form-control" ng-model="filterOptions.filterText" placeholder="Search(自动刷新)">
+                </div>
+                <a ng-click="reflash()" class="btn btn-default">刷新</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="gridStyle" ng-grid="gridOptions">
+            </div>
+        </div>
+    </div>
+</div>
+
+

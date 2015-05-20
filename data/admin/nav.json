@@ -1,0 +1,25 @@
+[{
+	"TheName":"用户管理",
+	"items":[{"TheName":"用户管理","Url":"User"}]
+},
+{
+	"TheName":"网站分类管理",
+	"items":[{"TheName":"网站分类管理","Url":"SiteSort"},{"TheName":"广告图片管理","Url":"Adv"}]
+},
+{
+	"TheName":"网站网址管理",
+	"items":[{"TheName":"网站网址管理","Url":"Site"},{"TheName":"已审核网站管理","Url":"HasInv"},{"TheName":"未审核网站管理","Url":"NeedInv"}]
+},
+{
+	"TheName":"数据管理",
+	"items":[{"TheName":"数据管理","Url":"Data"}]	
+},
+{
+	"TheName":"留言板管理",
+	"items":[{"TheName":"留言板管理","Url":"Message"}]
+},
+{
+	"TheName":"系统管理",
+	"items":[{"TheName":"刷新","Url":"Flesh"}]
+}
+]

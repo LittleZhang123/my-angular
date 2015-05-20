@@ -1,0 +1,49 @@
+<style>
+	.showcase-form textarea .ng-dirty.ng-invalid,
+	.showcase-form select .ng-dirty.ng-invalid,
+	.showcase-form input.ng-dirty.ng-invalid {
+	    border-color: #e9322d;
+	    -webkit-box-shadow: 0 0 6px #f8b9b7;
+	    -moz-box-shadow: 0 0 6px #f8b9b7;
+	    box-shadow: 0 0 6px #f8b9b7;
+	}
+</style>
+<form class="panel panel-primary showcase-form" name="form">
+	<div class="panel-heading">
+		<button ng-click="submit()" class="btn btn-success">保存</button>
+		<a ui-sref="webSortList()" class="btn btn-default">返回</a>
+	</div>	
+	<div class="panel-body">
+		<div class="form-horizontal">
+			<div class="form-group">
+<label for="" class="col-md-2 control-label">网站分类名称</label>
+<div class="col-md-10">
+<input type="text" required ng-model="epData.TheName" class="form-control" placeholder="">
+</div>
+</div>
+
+			<div class="form-group">
+				<label for="" class="col-md-2 control-label">是否启用</label>
+				<div class="col-md-1">
+					<div class="checkbox text-center">
+						<input type="checkbox" ng-model="epData.IsUse">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="" class="col-md-2 control-label">是否删除</label>
+				<div class="col-md-1">
+					<div class="checkbox text-center">
+						<input type="checkbox" ng-model="epData.IsDelete">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="" class="col-md-2 control-label">备注</label>
+				<div class="col-md-10">
+					<textarea ng-model="epData.Remark" class="form-control" placeholder=""></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

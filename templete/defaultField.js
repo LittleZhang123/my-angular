@@ -1,0 +1,25 @@
+IsUse:{
+		type:Boolean,
+		defualt:true
+	},
+	IsDelete:{
+		type:Boolean,
+		defualt:false
+	},
+	Remark:String,
+	meta:{
+		createAt:{
+			type:Date,
+			defualt:Date.now()
+		},
+		updateAt:{
+			type:Date,
+			defualt:Date.now()
+		},
+		createUser:{
+			type:mongoose.Schema.Types.ObjectId,ref:'users'
+		},
+		updateUser:{
+			type:mongoose.Schema.Types.ObjectId,ref:'users'
+		}
+	}

@@ -1,0 +1,20 @@
+[
+{
+	"_Id":"1",
+	"TheName":"张大哥1",
+	"Password":"1111",
+	"Power":"index"
+},
+{
+	"_Id":"2",
+	"TheName":"张大哥2",
+	"Password":"1111",
+	"Power":["index","delete"]
+},
+{
+	"_Id":"3",
+	"TheName":"张大哥3",
+	"Password":"1111",
+	"Power":""
+}
+]
